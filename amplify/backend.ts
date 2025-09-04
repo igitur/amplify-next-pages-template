@@ -18,7 +18,7 @@ if (rootScope) {
           CfnResource.isCfnResource(node) &&
           (node.cfnResourceType == 'AWS::IAM::Role' || node.cfnResourceType == 'AWS::IAM::User')
       ) {
-        node.addPropertyOverride('PermissionsBoundary', 'arn:aws:iam::140023385708:policy/permission-boundary');
+        node.addPropertyOverride('PermissionsBoundary', 'permission-boundary');
       }
     },
   });
